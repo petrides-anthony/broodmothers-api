@@ -1,14 +1,23 @@
 {
   "name": "broodmother-api",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "repository": "https://github.com/petrides-anthony/social-web.git",
+  "author": "Anthony Petrides <Anthony.Petrides@thetrainline.com>",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html",
+    "start-stack": "docker-compose -f docker-compose.yml up --build",
+    "kill-stack": "docker-compose -f docker-compose.yml down"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3",
+    "mongojs": "^3.1.0",
+    "mongoose": "^5.9.16",
+    "react": "^16.13.1"
   }
 }
+
